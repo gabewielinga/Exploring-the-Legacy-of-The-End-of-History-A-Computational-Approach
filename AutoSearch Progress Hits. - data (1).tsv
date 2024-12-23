@@ -1,0 +1,113 @@
+sep=												
+docPid	left_context	context	right_context	word	lemma	pos						
+summary.searchParam.csvsepline	FALSE											
+summary.searchParam.csvsummary	TRUE											
+summary.searchParam.indexname	15879666@uva.nl:Foreign-Policy-REAL											
+summary.searchParam.patt	[word="progress"]											
+summary.subcorpusSize.documents	84											
+summary.subcorpusSize.tokens	532185											
+summary.numberOfHits	101											
+summary.numberOfDocs	46											
+							2	1	-1	-2		Explanation
+ANNOTATION							Fukuyama Hard (Teleological, Deterministic)	1 = Fukuyama Light (Flexible, Non-Deterministic)	-1 = Non-Teleological (Not Teleological)	-2 = No Historical/Teleological Mention (Unrelated Progress)		
+3	 import substitution briefly witnessed measurable	 progress	 toward their development goals .	progress		WORD				X		Economic Progress
+3	 back the superpowers ' current	 progress	 toward sustained detente . The	progress		WORD	X					Inevitable Progress Towards Sustained Detente
+5	 as misleading in assessing genuine	 progress	 in the Andean drug war	progress		WORD			X			
+5	 milestones that fail to mark	 progress	 toward any meaningful goal .	progress		WORD			X			
+5	 and equipment ] , requiring	 progress	 in tangible and intangible areas	progress		WORD			X			
+5	 of military assistance or "	 progress	 " in the U.S. drug	progress		WORD				X		
+6	 rich even as the poor	 progress	 in this communications revolution .	progress		WORD			X			More Open Ended View of Progress
+8	 several years to show meaningful	 progress	 . From the American side	progress		WORD		X				Flexible, But no Singular Telos
+8	 negotiation ; but in part	 progress	 will be possible because Japan	progress		WORD		X				Ideal Endpoint Improved Relations
+9	 which has been accompanied by	 progress	 in arms control negotiations and	progress		WORD	X					Strongly Felt Around The Globe Suggests Inevitable New World Order.
+9	 world economy . Rapid technological	 progress	 , along with exponential growth	progress		WORD				X		Technological Progress
+9	 notable development is the rapid	 progress	 of Asia 's newly industrialized	progress		WORD				X		Economic Development
+9	 we have high hopes for	 progress	 toward a new framework for	progress		WORD		X				Mentioning of Democracy and Market Integration but not inevatability or Singular Telos
+9	 know that we expect further	 progress	 . It is on this	progress		WORD		X				Tone still Flexible
+9	 in that country . Economic	 progress	 , in turn , is	progress		WORD	X					Economic Progress leading to China's Development and Democratisation, positing liberal democracy as telos.
+9	 Soviet Union , and the	 progress	 toward the unification of Germany	progress		WORD				X		Progress in Unification in Germany
+10	 in fact adversely affects technical	 progress	 , nor the findings of	progress		WORD				X		Technical Progress
+10	 expect more rapid and substantial	 progress	 in them within one negotiation	progress		WORD				X		
+12	 The United States cannot make	 progress	 in its most immediate security	progress		WORD		X				Potential For Cooperation
+12	 reasons for promoting the economic	 progress	 of the developing worldþreasons that	progress		WORD		X				Economic Progress needs promotion by USSR and US
+12	 and Arefieva suggest that significant	 progress	 could be made in the	progress		WORD		X				Joint US-USSR Efforts
+13	 their own internal structures .	 Progress	 in that bold enterprise ,	Progress		WORD	X					Progress tied to Liberal Democracy
+14	 early stages of development ,	 progress	 to more mature economies seems	progress		WORD			X			Economic Progress toward Market Mechanisms
+15	 Gaulle , to block further	 progress	 . For much of the	progress		WORD			X			Critiques too-deterministic approaches
+16	 as our vision is by	 progress	 in disarmament talks and the	progress		WORD			X			Open Ended Process.
+16	 interests have brought about earlier	 progress	 in the European construction ,	progress		WORD	X					Progress Necessary outcomes when realised
+16	 , and conversely , no	 progress	 was ever made without the	progress		WORD	X					Ibid.
+16	 would never have made such	 progress	 in the face of so	progress		WORD	X					Progress as a result of Ideal, persisting through time
+16	 direction of this reorganization ,	 progress	 will be stalled . Whatever	progress		WORD		X				Allows for setbacks
+16	 will be stalled . Whatever	 progress	 has been made in recent	progress		WORD		X				Not inevitable
+16	 the 1980 s _ rapid	 progress	 or gradual disintegration . If	progress		WORD	X					If progress not pursued it will lead to stagnation.
+17	 itself will continue its inexorable	 progress	 . Bargaining over new institutional	progress		WORD	X					Inexorable 
+17	 extent of the change .	 Progress	 toward unity was already faster	Progress		WORD	X					Inevitable forward momentum
+17	 a single country to veto	 progress	 . Not only does the	progress		WORD	X					Move toward deeper integration, seen as inevitable
+17	 member-state governments recently achieved some	 progress	 and the Commission has somewhat	progress		WORD	X					Essential steps toward Liberal Democratisation
+18	 how quickly the doors to	 progress	 could still slam shut .	progress		WORD		X				Does favour liberalism, but here acknowledges a setback
+18	 .- Soviet experience suggests that	 progress	 will be slow when relations	progress		WORD		X				More flexible 
+20	 of plutocratic oligarchies that impeded	 progress	 . The historical development of	progress		WORD			X			Rejecting idea of a linear process toward democracy
+20	 . Yet within Iraq some	 progress	 was being made . Between	progress		WORD		X				Favours liberal democratic ideals but is more flexible
+21	 a telectronic age in which	 progress	 relies heavily upon intensive and	progress		WORD			X			
+21	 in the war , making	 progress	 in North-South talks , and	progress		WORD		X				
+22	 Catholic church are making tremendous	 progress	 in grassroots organizing . The	progress		WORD		X				Gradual, flexible empowerment, distrust.
+23	 abandon " the understanding of	 progress	 as a permanent confrontation with	progress		WORD		X				Flexible strategy, tactical critiques
+23	 benchmarks by which to measure	 progress	 in U.S .- Soviet relations	progress		WORD		X				Incremental progress, flexible benchmarks
+23	 useful benchmarks by which Soviet	 progress	 can be judged . But	progress		WORD		X				Flexible progress, mutual effort
+24	 regional coordination is also making	 progress	 elsewhere , as was seen	progress		WORD		X				Flexible regional integration, progress
+25	 on individual problems in which	 progress	 seems possible . This combination	progress		WORD		X				Pragmatic, flexible, incremental progress.
+34	 and EC summit sessions review	 progress	 twice a year . But	progress		WORD		X				Flexible, delayed European progress
+34	 to resolve and could block	 progress	 for years to come .	progress		WORD		X				Challenges delaying European progress
+34	 be identified as obstacles to	 progress	 . Even in her most	progress		WORD		X				Optimistic progress despite obstacles
+35	 to public health , though	 progress	 has also been registered in	progress		WORD				X		Health and environmental progress
+35	 atmospheric visibility . Particularly strong	 progress	 has been registered in air	progress		WORD				X		Progress Air Quality
+35	 air quality . Despite considerable	 progress	 , serious environmental problems persist	progress		WORD				X		Environmental Progress
+35	 this diversity is critical .	 Progress	 on global environmental issues will	Progress		WORD				X		Ibid.
+36	 . Castro is making sufficient	 progress	 to suggest immediate collapse is	progress		WORD			X			Uncertain, open-ended political progress
+36	 fade away is making modest	 progress	 . Although this new income	progress		WORD				X		Economic and diplomatic progress
+37	 suggested that a lack of	 progress	 on the West Bank and	progress		WORD				X		Progress between Israel and Palestine
+39	 links with Japan attuned to	 progress	 toward a relaxation of Soviet-American	progress		WORD		X				Flexible political progress, evolving
+41	 . While the Community 's	 progress	 has depended on a series	progress		WORD		X				Flexible political integration progress
+41	 with domestic reconstruction or domestic	 progress	 . These , in turn	progress		WORD		X				Progress European Community but not inevitable endpoint
+42	 created a major roadblock to	 progress	 over the last decade .	progress		WORD				X		Progress Israel Palestine
+42	 since there can be no	 progress	 without Israel 's cooperation .	progress		WORD				X		Ibid.
+42	 steps . The key to	 progress	 lies in quick exploitation of	progress		WORD				X		Ibid.
+42	 also be difficult , but	 progress	 may be possible in southern	progress		WORD				X		Ibid.
+44	 well . It 's the	 progress	 which has created the new	progress		WORD				X		Context of US-Japan Relations
+44	 pleased to see Japan 's	 progress	 but disturbed to find it	progress		WORD				X		Economic Progress within the existin system
+45	 only means of fostering economic	 progress	 . The use of military	progress		WORD		X				Liberal democracy ideal, but not inevitable
+46	 the Communist party in social	 progress	 , saying that both Social	progress		WORD		X				Flexible Open ended, possibility of Ideological convergence
+47	 aid to African governments on	 progress	 toward democracy . At the	progress		WORD		X				Democracy but not Deterministic
+50	 American policy . As Americans	 progress	 beyond it , however ,	progress		WORD			X			Progress mother of all problems
+50	 must bear in mind that	 progress	 is the mother of problems	progress		WORD			X			Progress mother of all problems (No singular Telos, emphasising historical complexity and contingency)
+51	 would also seriously undermine political	 progress	 toward reunification . Pyongyang 's	progress		WORD				X		Progress in context of reunification N-S Korea
+51	 The latter option would make	 progress	 impossible , because each side	progress		WORD				X		Ibid.
+51	 place than for any substantive	 progress	 achieved . Mutual hostility and	progress		WORD				X		Ibid.
+51	 by both sides suggests that	 progress	 is possible in principle .	progress		WORD				X		Ibid.
+51	 , achieve nothing . Real	 progress	 will require that Washington reexamine	progress		WORD			X			Progress that focusses on pragmatic steps in detente between US and North Korea
+53	 . But for most ,	 progress	 has been slow . Nevertheless	progress		WORD			X			Economic Progress, but no End point
+53	 African countries have made much	 progress	 toward putting them into effect	progress		WORD		X				Essential Reforms, no absolute endpoint
+53	 , Africa can make slow	 progress	 . But if key elements	progress		WORD			X			Economic Progress
+53	 . The main requirement for	 progress	 in reducing population growth is	progress		WORD			X			Progress contingent and open ended
+53	 that are needed for real	 progress	 . A few countries have	progress		WORD			X			Ibid.
+53	 A few countries have made	 progress	 over the last five years	progress		WORD				X		Progress related to lowering fertility rates
+53	 there is hope for more	 progress	 . Nevertheless , the task	progress		WORD				X		Ibid.
+53	 was little chance of real	 progress	 being made , at least	progress		WORD			X			Progress uncertain and Contingent
+54	 and a barrier to social	 progress	 at home , concern mounted	progress		WORD				X		Social Progress Civil Rights Movement
+54	 that have made the most	 progress	 in the world in the	progress		WORD		X				Progress in combining market mechanisms and state intervention but no singular telos.
+56	 South necessary to make real	 progress	 . The journal hopes to	progress		WORD			X			No Telos at all
+57	 of peace and cooperation .	 Progress	 made in functional areas can	Progress		WORD		X				Progress for Arab Democracy, still Flexible 
+58	 been able to make sufficient	 progress	 on the path of democratization	progress		WORD		X				Soviet Union on Path progresses to Democratisation but acknowledges its setback
+60	 ideas of perfectibility and continuous	 progress	 . Like anticommunism , it	progress		WORD		X				Promotion Democracy core Value, but also more descriptive.
+61	 be wholly reconstituted even if	 progress	 in bringing nuclear arsenals into	progress		WORD				X		Progress in Nuclear Context
+61	 could be avoided if realistic	 progress	 is made toward an arsenal	progress		WORD				X		Ibid.
+62	 indoctrination efforts as signs of	 progress	 over the antagonisms and self-doubts	progress		WORD		X				Progress but flexible endpoint
+62	 a crucial underpinning for further	 progress	 . " Only by developing	progress		WORD				X		Agricultural Progress
+66	 United States can best promote	 progress	 by rewarding good citizenship and	progress		WORD	X					Promoting Democracy is progress
+73	 ending a period of sluggish	 progress	 toward a common appreciation of	progress		WORD				X		Progress in Combatting water problems in the Middle East
+75	 has made slow but respectable	 progress	 toward military and intelligence cooperation	progress		WORD				X		Military Cooperation
+79	 Turkey are all watching the	 progress	 of the new Kurdish exodus	progress		WORD				X		Progress Kurish Exodus
+80	 patterns of trans-Atlantic relations .	 Progress	 toward European unity has accelerated	Progress		WORD	X					"Communist Menace", clear singular telos
+80	 , but also on concrete	 progress	 toward democratization . Full membership	progress		WORD	X					Progress toward democratisation, implying singular Telos
+82	 in both countries to claim	 progress	 ; in fact , the	progress		WORD				X		Progress in War on Drags
