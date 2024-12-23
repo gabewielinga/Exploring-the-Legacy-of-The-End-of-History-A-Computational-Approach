@@ -1,0 +1,23 @@
+Research Log: Hitparank
+Objective: Doing Hitparank
+
+Steps Taken:
+	1.	See whether Xcode Command Line Tools were installed
+	◦	They were installed in Library Developer Command Line Tools / usr/ bin / git
+	2.  Created N-Gram lists on google sheet using: ‘Ossenkoppele, Thijs. 2023. ‘Creating N-Gram Lists for Paragraph Retrieval with HitPaRank’. https://docs.google.com/document/d/14Xi1Z1SbfWsTE0cIYD8TYYNgQjqh0z1wLYMIqLR7fPY/edit?usp=sharing. ’ 
+-> Downloaded them and turned it into TSV file.
+-
+Research Log: Installation of cpanm and XML::Twig
+Date: December 22, 2024 Researcher: Gabe
+I I began the process of setting up the required Perl Modules for my research, follwing the instructions outlined in Thijs Ossenkoppele's guide, "Using HitPaRank for Non-Developers (2023)
+One of the modules I needed to install was cpanm, a Perl module managament tool, which is essential for installing additional perl modules such as XML::Twig
+1. Initial attempts:
+Following the document, I first attemtped to install cpanm via the cpan commanf. The process did not show immediate errors during installation, but after completing the installation, I found that cpanm was still not recognised by the system (-bash: cpanm: command not found)
+I tried multipe times to run cpanm Xml::twig but received the same error
+Troubleshooting:
+To resolve the issues i tried several steps;
+Verified whether cpanm was installed correctly by checking the installation directories (/opt/local/libexec/per15/34/sitebin/cpanm) but found it was installed.
+Attempted to execute cpanm from its installation path directly, but the command was still not recognised
+Further troubleshooting using instmodsh.
+I tried to interact with perl modules through instmodsh to check installed modules and find any issues related to cpanm, but this did not provide a solution either.
+-> chose to do manual annotation.
