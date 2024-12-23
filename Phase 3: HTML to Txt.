@@ -1,0 +1,48 @@
+Research Log - HTML Text Extraction and Cleaning
+Date: December 12, 2024 Objective: Extract text from an HTML file and clean it for further analysis.
+Step 1: Initial Setup and File Preparation
+	1.	Action: Opened terminal and launched a text editor (Nano) to write the Python script. 
+	◦	Command: nano extract_text.py 
+	2.	Script Overview: The script aims to: 
+	◦	Open and read the content of an HTML file. 
+	◦	Parse the HTML using BeautifulSoup. 
+	◦	Extract and clean the text. 
+	◦	Optionally, write the cleaned text to a new file for further analysis. 
+	3.	Script in Nano: 
+from bs4 import BeautifulSoup
+# Open the HTML file
+with open('your_html_file.html', 'r', encoding='utf-8') as file:
+    html_content = file.read()
+# Parse the HTML content using BeautifulSoup
+soup = BeautifulSoup(html_content, 'lxml')
+# Extract all text from the HTML
+text = soup.get_text()
+# Clean up the text (optional step, depending on your needs)
+cleaned_text = text.strip()
+# Print the extracted text
+print(cleaned_text)
+# Optionally, write the text to a new file
+with open('output.txt', 'w', encoding='utf-8') as output_file:
+    output_file.write(cleaned_text)
+Step 2: Execution
+	1.	Run the script: 
+	◦	Command: python extract_text.py 
+	◦	Expected Output: The script should output the cleaned text in the terminal and save it to a file named output.txt. 
+	2.	Observations: 
+	◦	The script executed successfully without errors. 
+	◦	The HTML content was extracted and cleaned, resulting in plain text. 
+	◦	The cleaned text was written to output.txt. 
+	3.	Issues Encountered: 
+	◦	The initial script did not handle potential HTML artifacts (such as special characters or extraneous tags). 
+Step 3: Next Steps and Improvements
+	1.	Clean the extracted text further: 
+	◦	The next step involves improving the cleaning process to remove any residual HTML characters or formatting issues. 
+	◦	Additional Step: Implement regex-based cleaning to remove unwanted characters or patterns. 
+	2.	Test with different HTML files, and formalisation of research log. 
+	◦	Test the script with various HTML files to ensure consistent output and clean extraction across different content types. 
+	◦	Reviewed Whether there was a clean extraction 
+	◦	Asked Chatgpt to formalise my research log. 
+	◦	Checked for errors in the formalisation of research log 
+Summary
+Achieved getting a txt file of 84 articles of Foreign Policy (Editions from 1990 and 1991)
+Correctly went through: ‘Ossenkoppele, Thijs. 2024. ‘EBSCO HTML to Text’. (Concept in Motion Manuals: #?, EBSCO HTML to Text, Version Beta, December 2nd, 2024)
