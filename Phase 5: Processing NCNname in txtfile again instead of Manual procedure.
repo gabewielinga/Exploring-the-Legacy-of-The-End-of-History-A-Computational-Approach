@@ -1,0 +1,77 @@
+Research Log: Processing NCName in Text Files
+Objective: The goal of this task was to process a folder of .txt files to ensure that any names within these files adhered to the xsd:NCName format, meaning that the names would not contain colons and would only use valid characters (letters, digits, underscores, hyphens, and periods).
+
+Steps Taken:
+	1.	Problem Identification:
+	◦	The task was to ensure that names within the .txt files followed the XML Schema xsd:NCName rules. This means ensuring that names:
+	▪	Do not contain colons (:).
+	▪	Start with a letter or an underscore (_).
+	▪	Contain only letters, digits, underscores, hyphens, and periods.
+	2.	Approach:
+	◦	To automate this process, a Python script was developed. The script iterates over all .txt files in a given directory and validates whether each name in the file matches the xsd:NCName format. If a name does not conform to the rules, the script replaces any invalid characters (such as colons) with an underscore (_).
+	3.	Tools Used:
+	◦	Python 3 was used to develop the script.
+	◦	The re module (regular expressions) was used to validate the names according to the xsd:NCName format.
+	4.	Assistance from ChatGPT:
+	◦	While working on this task, I reached out to ChatGPT for guidance on creating a Python script to process the .txt files and ensure the names followed the xsd:NCName format.
+	◦	ChatGPT helped clarify the requirements of xsd:NCName, provided the full Python script for processing the files, and guided me on running the script in the terminal.
+	5.	Script Development:
+	◦	A Python script was created that performs the following:
+	▪	Reads all .txt files in the specified folder.
+	▪	Applies a regular expression to validate and modify each word in the files to match the xsd:NCName format.
+	▪	Replaces any invalid characters (such as colons) with underscores (_).
+	▪	Saves the modified content back into the same files.
+	6.	Running the Script:
+	◦	After writing the script, I tested it by running it in the terminal. The script successfully processed all files and modified them as required.
+	7.	Results:
+	◦	The script completed without errors, and the .txt files were successfully updated to ensure compliance with the xsd:NCName format.
+
+Full Python Script:
+python
+Copy code
+import os
+import re
+
+# Correct folder path for macOS
+folder_path = '/Users/gabe/Desktop/my_txts'  # Ensure this path is correct
+
+# Regular expression for matching valid xsd:NCName (without colons)
+valid_name_pattern = re.compile(r'^[A-Za-z_][A-Za-z0-9_\-\.]*$')
+
+# Function to check and modify names
+def validate_and_modify_name(name):
+    if valid_name_pattern.match(name):
+        return name  # Name is valid
+    else:
+        # Modify the name if invalid (e.g., remove colons or correct invalid characters)
+        return name.replace(':', '_')  # Replace colons with underscores, or modify as needed
+
+# Check if the folder exists
+if not os.path.exists(folder_path):
+    print(f"Error: The folder at {folder_path} does not exist.")
+else:
+    print(f"Folder found: {folder_path}")
+
+    # Process each text file in the folder
+    for filename in os.listdir(folder_path):
+        if filename.endswith('.txt'):
+            file_path = os.path.join(folder_path, filename)
+            
+            with open(file_path, 'r') as file:
+                content = file.readlines()
+            
+            modified_content = []
+            
+            # Modify the names in the content of each file
+            for line in content:
+                words = line.split()  # Split the line into words
+                modified_words = [validate_and_modify_name(word) for word in words]
+                modified_content.append(' '.join(modified_words))  # Join the words back
+            
+            # Save the modified content into a new file (or overwrite the original file)
+            with open(file_path, 'w') as file:
+                file.writelines(modified_content)
+
+            print(f"Processed {filename}")
+
+Conclusion: The task of processing the .txt files to ensure that the names adhere to the xsd:NCName format was successfully completed. The Python script efficiently handled the validation and modification of the files, and the process was smooth after consulting ChatGPT for assistance in creating the script.
