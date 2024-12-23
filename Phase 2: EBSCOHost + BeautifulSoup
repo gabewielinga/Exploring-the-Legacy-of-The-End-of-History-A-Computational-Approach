@@ -1,0 +1,43 @@
+Research Log: December 5, 2024 Platform: EBSCOHost
+Phase 1: Identifying Relevant International Relations Journals
+	1.	Search Process: 
+	◦	Conducted a search on EBSCOHost for International Relations journals using keywords such as "International Relations," "Foreign Affairs," etc. 
+	2.	Databases Identified: 
+	◦	Located the Foreign Affairs database and the International Affairs database. 
+	◦	Verified that journals from 1985 to 1995 in these databases are available in PDF format. 
+	3.	Further Exploration: 
+	◦	Continued searching for other relevant International Relations journals that provided content in HTML format for easier processing. 
+	◦	Discovered Foreign Policy, which offers articles in HTML format starting from 1990. 
+Phase 2: Organizing and Processing Data
+	1.	Organization: 
+	◦	Collected all Foreign Policy articles available in HTML format and saved them into a designated folder. 
+	2.	Conversion Process: 
+	◦	Began following the steps outlined in the document: 
+	▪	Ossenkoppele, Thijs. 2024. “EBSCO HTML to Text.” (Concept in Motion Manuals: #?, Version Beta, December 2, 2024). 
+	▪	Accessible at: Google Docs Link. 
+	◦	Started converting the HTML files into text using the guidelines provided. 
+	◦	Asked ChatGPT to formalise my research log. 
+	◦	Checked whether the research log was correctly formalised. 
+Phase 3:
+	1.	 
+	•	 Needed to install Homebrew again to Install Latest version of Python 
+	•	Installed Python3 with Brew install python 
+	•	Verified Python 3 with: python3 --version 
+	•	Installed pip for python3 
+	•	Installed Beautiful Soup with: pip3 install beautifulsoup4 lxml 
+	•	Opened Nano put this into it:   
+from bs4 import BeautifulSoup
+# Open the HTML file
+with open('your_html_file.html', 'r', encoding='utf-8') as file:
+    html_content = file.read()
+# Parse the HTML content using BeautifulSoup
+soup = BeautifulSoup(html_content, 'lxml')
+# Extract all text from the HTML
+text = soup.get_text()
+# Clean up the text (optional step, depending on your needs)
+cleaned_text = text.strip()
+# Print the extracted text
+print(cleaned_text)
+# Optionally, write the text to a new file
+with open('output.txt', 'w', encoding='utf-8') as output_file:
+    output_file.write(cleaned_text)
