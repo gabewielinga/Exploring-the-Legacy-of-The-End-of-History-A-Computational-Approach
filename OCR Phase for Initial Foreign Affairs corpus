@@ -1,0 +1,124 @@
+Research Log: Doing OCR Using Poppler, Macports, and Tesseract
+Phase 1
+	1.	Identified tools required for OCR: 
+	•	Poppler: To convert PDF pages into images. 
+	•	Tesseract: An OCR engine to extract text from images. 
+	•	Macports: A package manager for macOS to install necessary tools. 
+
+	2.	Attempted to install Tesseract: 
+	•	Initial attempts with Homebrew faced permission and dependency errors. 
+	•	Pivoted to using Macports for installation, which proved more successful. 
+Phase 2: Installation of Tools Using Macports
+	1.	Installed Macports 
+Command used: bash Copy code /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Macports/install/HEAD/install.sh)”
+
+	2.	Installed Poppler: 
+Command used: bash Copy code brew install poppler
+
+Verified installation: bash Copy code which pdftoppm
+Output: /usr/local/bin/pdftoppm
+	3.	Installed Tesseract and Language Data: 
+Installed Tesseract: bash Copy code brew install tesseract
+Installed English language data: bash Copy code brew install tesseract-lang
+Phase 3: Conversion of PDF to Images
+	1.	Navigated to the folder containing the PDF: Example path: /Users/gabe/Desktop/Hoffmann.pdf 
+	2.	Converted PDF pages to PNG images: 
+Command used: bash Copy code pdftoppm /Users/gabe/Desktop/Hoffmann.pdf /Users/gabe/Desktop/Hoffmann_image -png
+This produced images named Hoffmann_image-1.png, Hoffmann_image-2.png, etc.
+Phase 4: Performing OCR Using Tesseract
+	1.	Checked Tesseract installation: 
+Verified with: bash Copy code which tesseract
+Output: /usr/local/bin/tesseract
+	2.	Ran Tesseract on the first image: 
+Command used: bash Copy code tesseract /Users/gabe/Desktop/Hoffmann_image-1.png /Users/gabe/Desktop/Hoffmann_text_output -l eng
+Output file: Hoffmann_text_output.txt
+	3.	Repeated the process for subsequent images: 
+Example for the second page: bash Copy code tesseract /Users/gabe/Desktop/Hoffmann_image-2.png /Users/gabe/Desktop/Hoffmann_text_output_page2 -l eng
+Phase 5: 
+Opened and reviewed the text output files:
+Verified text accuracy by comparing OCR results to the original scanned document.
+	1.	Assessed errors: 
+Identified and recorded OCR mistakes using the OCR Quality Guide, ensuring each sample contained 100 tokens.
+	2.	Made adjustments as needed: 
+Corrected errors by refining input images (e.g., ensuring proper resolution or contrast).
+Asked Chat gpt to formalise this Research log and checked whether it was done correctly.
+Summary of Lessons Learned
+	•	Macports proved to be the most reliable package manager for installing Tesseract and Poppler. 
+	•	Ensuring proper file paths (e.g., using /Users/gabe/Desktop/) was critical to avoid "file not found" errors. 
+	•	Text accuracy depends heavily on image quality; clear and high-resolution PNGs produced better results. 
+This process ultimately succeeded in generating plain text from the scanned PDF and provided an opportunity to assess OCR accuracy.
+JSNOL
+Phase 1: 
+Looked at JSTOR Constellate Program
+Found Foreign Affairs at the newspapers and started building my Dataset
+	3.	Assessed errors: 
+COuld Not Find it at first when looking at Journals, switched to Newspapers
+	4.	Made adjustments as needed: 
+Found Foreign Affairs at newspapers, started to put a temporal range of 1985 to 1995 there, and could donload
+Results
+	•	Downloaded Foreign Affairs Corpus in JSNOL 
+	•	More than 4.487 documents downloaded, which can be opened in textedit. Contains Metadata only…  
+	•	Need to look at the further steps to transform to Folia XML 
+Following Steps to be Undertaken
+Turn JSNOL into Text.
+Use MetaData
+Check whether conditions apply
+JSNOL to Text
+Phase 1:
+Installed Nano, and put in JSNOL2TXT.py to create a script file
+Added Python code to the script.
+Goal
+Extract content from a JSONL file and convert it into text format using a Python script (JSONL2TXT.py).
+Steps Taken
+Script and File Setup
+Script (JSONL2TXT.py) and JSONL file were located in /Users/gabe/Desktop/.
+The script was run using the python3 command in Terminal.
+Encounters and Resolutions
+Error: File not found due to incorrect paths.
+Solution: Verified script and JSONL file locations. Used ls in Terminal to confirm the directory contents.
+Error: Permission denied for the script.
+Solution: Updated permissions with chmod +x JSONL2TXT.py.
+Error: JSONDecodeError due to invalid characters in the JSONL file.
+Solution: Identified and corrected invalid characters (ƒ) and ensured proper JSON formatting.
+Corrections Made
+
+Removed invalid characters (ƒ).
+Ensured every JSON object was closed properly with a closing brace (}).
+Used an online validator (e.g., JSONLint) to verify the JSONL file structure.
+JSONL File Content
+Example JSON snippet from the corrected file:
+json
+Copy code
+Output Folder Setup
+Created an output directory /Users/gabe/Desktop/Output for the results.
+Provided this directory path when prompted by the script.
+Outcome
+The script was executed with the corrected JSONL file. Errors were systematically resolved to allow successful processing of the file. The content was extracted and stored in the designated output folder.
+Reflections
+Validating and formatting JSONL files before processing is crucial.
+Keeping clear documentation of file paths and error logs helps troubleshoot effectively.
+Using chmod to handle script permissions can prevent execution issues.
+Research Log Entry: JSONL File Issue
+Date: December 5, 2024
+Task:
+Attempted to use the JSONL2TXT.py script to extract text and metadata from a JSONL file for analysis.
+Problem Encountered:
+The JSONL file provided seems to be malformed.
+Found invalid characters like ƒ in the data.
+The file does not follow the JSONL format: each line should be a single valid JSON object, but objects are split across multiple lines or contain extra characters.
+Research Log Entry: Annotation Assignment
+Task: Annotate 10 text units (paragraphs) from a selected article in the Foreign Affairs corpus.
+Phase 1: Preparation and Annotation Process
+	1.	Article Selection: 
+	◦	Selected a Foreign Affairs article authored by Hoffmann. 
+	◦	This article had already undergone OCR, with a folder containing the original PNG images. 
+	2.	Text Extraction: 
+	◦	Used the Tesseract OCR tool via the terminal to extract text from the PNG image files. 
+	◦	Encountered initial difficulty in locating the folder due to a misidentification of file formats (mistakenly thought files were in JPG format). 
+	◦	Resolved the issue with assistance from ChatGPT, using the correct prompt to collectively perform Tesseract OCR on the folder. 
+	◦	Successfully generated a full text file of the article for annotation. 
+	3.	Annotation Assignment: 
+	◦	Created an annotation assignment following the provided guidelines. 
+	◦	Annotated the first 10 text units from the Hoffmann article using a spreadsheet, accessible at the following link: Annotation Guidelines and Spreadsheet. 
+	•	Asked Chat GPT to formalise my research log 
+	•	Checked whether Research Log was correctly formalised
