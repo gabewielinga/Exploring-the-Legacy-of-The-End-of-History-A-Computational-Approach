@@ -1,0 +1,21 @@
+Research Log: Uploading Text Files in UCTO
+Objective: To generate FOLIA XML files from text files in UCTO for the project "UCTO_PROGRESS."
+	1.	Setup: Logged into UCTO using my UVA account and created a project titled "UCTO_PROGRESS." 
+	2.	File Upload: Uploaded text files from the folder my_txts into the project. Some files showed up in red, indicating an issue with the upload. 
+	3.	Issue Resolution: Attempted to resolve the issue by renaming the files to NCN. Despite this, 9 files continued to display the error message "upload failed." 
+	4.	Progress: Despite the upload failures, UCTO continued to process and create FOLIA XML files for the files that were successfully uploaded. 
+	5.	Successfully generated a folder called UCTO_PROGRESS, containing 75 articles related to foreign policy from 1990-1991 in FOLIA XML format. 
+	6.	Removed Error file 
+	7.	Asked ChatGPT to formalize the research log for clarity and documentation. 
+	8.	Outcome: successfully implemented: ‘Ossenkoppele, Thijs. 2023. ‘Tokenizing Your Documents using the UCTO webservice’. Tokenizing your Documents with UCTO 
+Research Log: Uploading FOLIA XML Files to AutoSearch
+Phase 1: Initial Setup and Upload
+	1.	Objective: To upload FOLIA XML files from the "UCTO_PROGRESS" project to AutoSearch for further analysis. 
+	2.	Process: 
+	◦	Referenced the manual “Uploading Your Corpus to AutoSearch” by Thijs Ossenkoppele (2023) for guidance. 
+	◦	Opened AutoSearch and logged in using my UVA account. 
+	◦	Created a new project titled "Foreign Policy_PROGRESS." 
+	◦	Uploaded the FOLIA XML files from the "UCTO_PROGRESS" folder into the new AutoSearch project. 
+	3.	Outcome: The corpus titled "Foreign Policy_PROGRESS" was successfully created in AutoSearch. 
+	4.	Completion: Successfully followed the steps outlined in “Uploading Your Corpus to AutoSearch” by Thijs Ossenkoppele (2023), completing the upload process. 
+	5.	Action: Asked ChatGPT to formalize this research log for documentation purposes and checked whether formalisation was done rightly. 
